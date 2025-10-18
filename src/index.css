@@ -1,68 +1,55 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* Este es el contenido puro de CSS que se está inyectando en App.jsx.
+No contiene ninguna sintaxis de JavaScript.
+*/
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
+/* Estilo para Botones (Efecto 3D Suave) */
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+font-size: 1.2rem;
+color: #FFFFFF;
+text-transform: uppercase;
+padding: 10px 20px;
+border-radius: 8px;
+border: none;
+cursor: pointer;
+margin: 20px auto;
+display: block;
+transition: all 0.2s ease;
+font-weight: 600;
+letter-spacing: 0.5px;
+position: relative;
+box-shadow: 0 4px 0 rgba(79, 70, 229, 1);    /* Azul Índigo Profundo */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button:hover {
+opacity: 0.9;
+}
+
+button:active {
+transform: translateY(4px); 
+box-shadow: 0 0 0 rgba(79, 70, 229, 1); 
+}
+
+/* Estilo para la Navegación */
+.c-menu  {
+display: flex;
+justify-content: center;
+gap: 2rem;
+padding: 1rem 1rem;
+background-color: #1f2937; 
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.c-menu a {
+color: #d1d5db; /* Gris Claro */
+text-decoration: none;
+font-weight: 700;
+padding: 0.5rem 1rem;
+border-radius: 6px;
+transition: all 0.2s ease;
+}
+
+.c-menu a:hover {
+color: #ffffff;
+background-color: #3b82f6; /* Azul Brillante */
+box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
 }
